@@ -105,11 +105,11 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Clock"
 set $ws2 "2: Chrome"
-set $ws3 "3: VS Code VMS"
+set $ws3 "3: VS Code"
 set $ws4 "4: Terminal"
-set $ws5 "5: Music"
-set $ws6 "6: qBittorrent"
-set $ws7 "7: Cursor"
+set $ws7 "5: Cursor"
+set $ws5 "6: Music"
+set $ws8 "8: Bruno"
 set $ws9 "9: Obsidian"
 set $ws10 "10:"
 
@@ -140,9 +140,9 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="Google-chrome"] $ws2
 assign [class="Code"] $ws3
 assign [class="Gnome-terminal"] $ws4
-assign [class="Rhythmbox"] $ws5
-assign [class="qBittorrent"] $ws6
-assign [class="Cursor"] $ws7
+assign [class="Cursor"] $ws5
+assign [class="Rhythmbox"] $ws6
+assign [class="bruno"] $ws8
 assign [class="obsidian"] $ws9
 
 
@@ -194,11 +194,13 @@ bindsym $mod+Shift+x exec i3lock
 exec gnome-clocks
 exec google-chrome
 exec code ./Programming/vms
+exec code ./kryptex
+exec gnome-terminal
 exec gnome-terminal
 exec rhythmbox
-exec qbittorrent
-exec code ./Programming/codewars/Leetcode
-exec code ./Programming/gao-yang-be
 exec --no-startup-id flameshot
 exec /home/ken/Downloads/Cursor-0.45.15-73dd83bb6f8e3a3704ad8078a8e455ac6d4260d1.deb.glibc2.25-x86_64.AppImage
+exec /home/ken/Downloads/Cursor-0.45.15-73dd83bb6f8e3a3704ad8078a8e455ac6d4260d1.deb.glibc2.25-x86_64.AppImage
+exec bruno
 exec obsidian
+
